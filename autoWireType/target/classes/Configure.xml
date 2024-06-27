@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <!--<bean id="employee" class="com.hefshine.autoWireType.Employee" autowire="byName">
+	<property name="id" value="1000"></property>
+	<property name="name" value="Omkar"></property>
+   </bean>
+   
+   <bean id="employee" class="com.hefshine.autoWireType.Employee" autowire="byType">
+	<property name="id" value="1001"></property>
+	<property name="name" value="Pranali"></property>
+   </bean>
+   
+   -->
+   <bean id="employee" class="com.hefshine.autoWireType.Employee" autowire="constructor">
+	<constructor-arg name="id" value="101"></constructor-arg>
+	<constructor-arg name="name" value="Sadhana"></constructor-arg>
+   </bean>
+
+</beans>
